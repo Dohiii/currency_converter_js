@@ -1,0 +1,131 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    #0a0714,
+    #1a222b,
+    #283940,
+    #3d5252,
+    #596b62
+  );
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-top: 15vh;
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#reverse {
+  margin-top: 1.8rem;
+  height: 2rem;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.options-from {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.options-to {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.exchange-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.exchange-form input {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.3rem 0 rgb(123, 122, 122);
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+}
+
+#calculate:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+#calculate {
+  padding: 0.5rem 3rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #000;
+}
+
+h1 {
+  margin-top: -1rem;
+}
+
+select {
+  background-color: #fff;
+  padding: 0.2rem 1rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+option {
+  background-color: #fff;
+}
+
+input {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  -moz-appearance: textfield;
+}
+
+input:active {
+  border: 1px solid black;
+}

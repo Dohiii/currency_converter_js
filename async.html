@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1 class="header">Currency converter</h1>
+        <div class="exchange-form">
+          <div class="options">
+            <div class="options-from">
+              <label for="conver-from">Convert from</label>
+              <select name="conver-from" id="conver-from">
+                <option value="PLN">PLN</option>
+              </select>
+            </div>
+            <button id="reverse">
+              <i class="arrow left"></i><i class="arrow right"></i>
+            </button>
+            <div class="options-to">
+              <label for="conver-to">Convert to</label>
+              <select name="conver-to" id="conver-to"></select>
+            </div>
+          </div>
+
+          <label for="amount"></label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            min="1"
+            max="10000000"
+            placeholder="ammount"
+          />
+          <button id="calculate">Calculate</button>
+
+          <div class="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
